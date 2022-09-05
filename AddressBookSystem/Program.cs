@@ -13,8 +13,7 @@ namespace AddressBookSystem
             };
             Console.WriteLine(contact.FirstName + "\n " + contact.LastName);
             Contact contact1 = new Contact();
-            contact1.FirstName = Console.ReadLine();
-            contact1.LastName = Console.ReadLine();
+            contact1.Editperson();
         }
     }
 }
