@@ -8,8 +8,8 @@ namespace AddressBookSystem
         {
             Contact contact = new Contact();
             {
-                FirstName = Console.ReadLine();
-                LastName = Console.ReadLine();
+                FirstName  = Console.ReadLine();
+                LastName  = Console.ReadLine();
             };
             Console.WriteLine(contact.FirstName + "\n " + contact.LastName);
             AddressBook addressBook = new AddressBook();
