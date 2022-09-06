@@ -13,7 +13,7 @@ namespace AddressBookSystem
             };
             Console.WriteLine(contact.FirstName + "\n " + contact.LastName);
             Contact contact1 = new Contact();
-            contact1.Editperson();
+            contact1.Deleteperson();
         }
     }
 }

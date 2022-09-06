@@ -25,21 +25,38 @@ namespace AddressBookSystem
         {
             Console.WriteLine("Enter the name of the person you whould like to edit");
             string name = Console.ReadLine();
-            Contact person = AddressBook.FirstOrDefault(x => x.name.ToLover() == name.ToLover());
-            if (person == null)
+            if (AddPerson == null)
             {
                 Console.WriteLine("That person could not be found . press any key to continue");
                 Console.ReadKey();
                 return;
             }
             Console.WriteLine("Are you sure you want edit this person from your address book? (y/n)");
-            AddressBook.AddPerson(Contact);
-            if (Console.ReadKey().Key == ConsoleKey.Y)
+            AddressBook.AddPerson();
+            if (Editperson == AddPerson)
             {
                 Console.WriteLine("Enter new details");
-                AddressBook.Editperson(person);
+                AddressBook.Editperson();
                 Editperson();
             }
         }
+        public static void Deleteperson()
+        {
+            AddressBook.Deleteperson();
+            Console.WriteLine("delete the any person . press any key to continue");
+            Console.ReadKey();
+            if (AddPerson == null)
+            {
+                Console.WriteLine("Are you sure you want delete this person from your address book? (y/n)");
+                AddressBook.AddPerson();
+                if (Deleteperson == AddPerson)
+                {
+                    Console.WriteLine("Enter the delete person");
+                    AddressBook.Deleteperson();
+                    Deleteperson();
+                }
+            }
+        }
+        
     }
 }
