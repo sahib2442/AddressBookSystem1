@@ -13,7 +13,29 @@ namespace AddressBookSystem
             };
             Console.WriteLine(contact.FirstName + "\n " + contact.LastName);
             Contact contact1 = new Contact();
-            contact1.Deleteperson();
+            AddressBook addressBook = new AddressBook();
+            while (addressBook == null)
+            {
+                Console.WriteLine("\n select program \n 1.AddPerson 2.EditPerson 3.DeletePerson");
+                int option = Convert.ToInt32(Console.ReadLine());
+                switch (option)
+                {
+                    case 1:
+                        Console.WriteLine("Enter the Addperson");
+                        Console.ReadLine();
+                        break;
+                    case 2:
+                        Console.WriteLine("Enter the EditPerson");
+                        Console.ReadLine();
+                        break ;
+                    case 3:
+                        Console.WriteLine("Enter the DeletePerson");
+                        Console.ReadLine();
+                        break ;
+                }
+            }
+
+
         }
     }
 }
