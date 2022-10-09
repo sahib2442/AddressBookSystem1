@@ -195,7 +195,19 @@ namespace AddressBookSystem
             else
                 Console.WriteLine("no records found");
         }
-
+        public void ReadFromStreamReader(string filePath)
+        {
+            StreamReader reader = new StreamReader(filePath);
+            using (StreamReader sr = File.OpenText(filePath))
+            {
+                string s = "";
+                while((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+            }
+            Console.ReadKey();
+        }
     }
 }
 
