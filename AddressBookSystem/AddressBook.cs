@@ -128,6 +128,12 @@ namespace AddressBookSystem
         {
             throw new NotImplementedException();
         }
+         private static void getAddressBookByName()
+        {
+            Console.WriteLine("Enter Address Book Name to search");
+            String bookName = object.nextline();
+            Console.WriteLine(op.ToString());
+        }
     }
 }
 
