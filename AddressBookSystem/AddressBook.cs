@@ -5,7 +5,7 @@ namespace AddressBookSystem
     class AddNewContact
     {
         static String? firstName;
-        static String?lastName;
+        static String? lastName;
         static long? phoneNumber;
         static String? email;
         static String? address;
