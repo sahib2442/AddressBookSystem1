@@ -134,6 +134,15 @@ namespace AddressBookSystem
             String bookName = object.nextline();
             Console.WriteLine(op.ToString());
         }
+        public static bool UniqContact(String firstName)
+        {
+            var details = contact.GetType(firstName);
+            if (details == null)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
 
