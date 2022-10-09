@@ -4,7 +4,7 @@ namespace AddressBookSystem
 {
     class program
     {
-        private static object obj;
+        private static object ? obj;
 
         public static string? FirstName { get; private set; }
         public static string? LastName { get; private set; }

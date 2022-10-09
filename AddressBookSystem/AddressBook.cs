@@ -156,7 +156,7 @@ namespace AddressBookSystem
             String location = object.Equals();
             obj.nextLine();
             int flag = 1;
-            for (String entry; city.Equals())
+            for (String entry; city.Equals)
             {
                 if (entry.Equals(location)) 
                     Console.WriteLine(entry);
@@ -179,6 +179,20 @@ namespace AddressBookSystem
                 flag = 0;
             }
             if (flag == 1) 
+                Console.WriteLine("no records found");
+        }
+        public void getContactByCityOrState()
+        {
+            Console.WriteLine("Enter city or state");
+            String location = obj.next();
+            object.nextLine();
+            List check1 = state.GetType(location);
+            List check2 = city.GetType(location);
+            if (check1 != null)
+                Console.WriteLine(state.GetType(location));
+            else if (check2 != null)
+                Console.WriteLine(city.GetType(location));
+            else
                 Console.WriteLine("no records found");
         }
 
