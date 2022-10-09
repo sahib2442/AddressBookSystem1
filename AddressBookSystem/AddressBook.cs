@@ -150,6 +150,38 @@ namespace AddressBookSystem
             }
             return false;
         }
+        public void viewPersonByCity()
+        {
+            Console.WriteLine("Enter city");
+            String location = object.Equals();
+            obj.nextLine();
+            int flag = 1;
+            for (String entry; city.Equals())
+            {
+                if (entry.Equals(location)) 
+                    Console.WriteLine(entry);
+                flag = 0;
+            }
+            if (flag == 1) 
+                Console.WriteLine("no records found");
+        }
+
+        public void viewPersonByState(string entry)
+        {
+            Console.WriteLine("Enter state");
+            String location = object.Equals();
+            object value = object.Equals();
+            int flag = 1;
+            for (String entry; state.keySet())
+            {
+                if (entry.Equals(location))
+                    Console.WriteLine(entry);
+                flag = 0;
+            }
+            if (flag == 1) 
+                Console.WriteLine("no records found");
+        }
+
     }
 }
 
