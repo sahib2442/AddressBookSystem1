@@ -11,5 +11,20 @@ namespace AddressBook
         public string? Zib { get; set; }
         public string? PhoneNumber { get; set; }
         public string? Email { get; set; }
+
+        internal void Addperson(Contact contact)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void DeleteContact(Contact contact)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void EditPerson(Contact contact)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
