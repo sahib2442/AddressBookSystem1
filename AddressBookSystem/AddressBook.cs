@@ -5,12 +5,12 @@ namespace AddressBookSystem
     class AddNewContact
     {
         static String? firstName;
-        static String ?lastName;
-        static long ?phoneNumber;
+        static String?lastName;
+        static long? phoneNumber;
         static String? email;
-        static String ?address;
-        static String ?city;
-        static String ?state;
+        static String? address;
+        static String? city;
+        static String? state;
         static int zipCode;
         public static List<String> addressBook = new List<String>();
 
