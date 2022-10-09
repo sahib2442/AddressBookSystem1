@@ -18,6 +18,7 @@ namespace AddressBookSystem
         static String ?state;
         static int zipCode;
         public static List<String> addressBook = new List<String>();
+        private static object op;
 
         // method for add new contact
         public static void AddNewContacts()
@@ -132,6 +133,12 @@ namespace AddressBookSystem
         private static void UpdateContact()
         {
             throw new NotImplementedException();
+        }
+        private static void getAddressBookByName()
+        {
+            Console.WriteLine("Enter Address Book Name to search");
+            String bookName = object.nextline();
+            Console.WriteLine(op.ToString());
         }
     }
 }
